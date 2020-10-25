@@ -9,10 +9,12 @@ def stringIsomorphic(s1, s2):
                     count += 1
             else:
                 dic[s1[i]] = s2[i]
+    else:
+        print("Hey! The size of the strings are not the same.")
+        return False
     if count > 0:
         return False
     else:
         return True
 
-print(stringIsomorphic("aac", "bcc"))
 
