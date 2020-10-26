@@ -19,3 +19,14 @@ def testPopItem2():
 def testPopItem3():
     result = popItem()
     assert result == []
+
+def testPushItem3():
+    result = pushItem("Hola")
+    assert result == ["Hola"]
+
+def testPusItem4():
+    result = pushItem(100)
+    print(result)
+    assert result == ["Hola", 100]
+    
+
